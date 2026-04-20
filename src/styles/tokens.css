@@ -1,0 +1,34 @@
+:root {
+  /* --- CORES BRAND (Identidade TerritorIA) --- */
+  --color-brand-terra: #c17b4e; /* Ocre principal */
+  --color-brand-terra-light: #d9a07e; /* Ocre suave para hovers */
+  --color-brand-terra-dark: #8c5432; /* Ocre profundo para detalhes */
+
+  /* --- CORES NEUTRAS --- */
+  --color-neutral-ink: #1a0a00; /* Fundo quase preto quente */
+  --color-neutral-white: #ffffff; /* Branco puro */
+  --color-neutral-gold: #e5d5c5; /* Bege/Dourado para textos secundários */
+  --color-neutral-gray: #4d4d4d; /* Cinza para textos de apoio */
+
+  /* --- TIPOGRAFIA --- */
+  /* Usando fontes que trazem autoridade e modernidade */
+  --font-family-display: "Inter", system-ui, -apple-system, sans-serif;
+  --font-family-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* --- ESPAÇAMENTO --- */
+  --space-unit: 8px;
+  --space-xs: calc(var(--space-unit) * 1); /* 8px */
+  --space-sm: calc(var(--space-unit) * 2); /* 16px */
+  --space-md: calc(var(--space-unit) * 4); /* 32px */
+  --space-lg: calc(var(--space-unit) * 8); /* 64px */
+
+  /* --- ANIMAÇÕES --- */
+  --anim-duration-base: 0.3s;
+  --anim-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- BORDAS & SHADOWS --- */
+  --radius-sm: 2px;
+  --radius-md: 8px;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.4);
+}

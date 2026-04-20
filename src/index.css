@@ -1,0 +1,85 @@
+@import "./styles/tokens.css";
+
+/* Reset Profissional */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-family-body);
+  background-color: var(--color-neutral-cream);
+  color: var(--color-neutral-ink);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Largura máxima confortável para leitura */
+  margin: 0 auto; /* Centraliza o bloco na tela */
+  padding: 0 2rem; /* Margens internas para o conteúdo não encostar no celular */
+}
+
+/* Garante que as seções tenham respiro vertical */
+section {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Acessibilidade: Garante que o foco seja visível */
+:focus-visible {
+  outline: 2px solid var(--color-brand-terra);
+  outline-offset: 4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Utilitários de Animação */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeup {
+  animation: fadeUp var(--anim-duration-slow) var(--anim-ease) both;
+}
+
+/* Custom Selection */
+::selection {
+  background: var(--color-brand-terra);
+  color: var(--color-neutral-white);
+}

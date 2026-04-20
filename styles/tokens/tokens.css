@@ -1,0 +1,32 @@
+:root {
+  /* Brand Colors */
+  --color-brand-terra: #c17b4e;
+  --color-brand-terra-dark: #993c1d;
+  --color-brand-terra-light: #f0997b;
+  --color-brand-terra-pale: #faeeda;
+
+  /* Neutral Scale (Ink & Cream) */
+  --color-neutral-ink: #0d0500;
+  --color-neutral-ink-mid: #2a1200;
+  --color-neutral-ink-soft: #4a2c10;
+  --color-neutral-muted: #7a5530;
+  --color-neutral-cream: #fdf6ef;
+  --color-neutral-white: #ffffff;
+  --color-neutral-gold: #c9a882;
+
+  /* Spacing  */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2.5rem;
+  --space-lg: 6rem;
+  --space-xl: 10rem;
+
+  /* Typography */
+  --font-family-display: "Playfair Display", Georgia, serif;
+  --font-family-body: "DM Sans", system-ui, sans-serif;
+
+  /* Transitions */
+  --anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --anim-duration-slow: 0.7s;
+  --anim-duration-base: 0.2s;
+}

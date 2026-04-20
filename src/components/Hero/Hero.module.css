@@ -1,0 +1,138 @@
+.secao {
+  background: linear-gradient(
+    180deg,
+    #1a0f08 0%,
+    var(--color-neutral-ink) 100%
+  );
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 1.5rem; /* Respiro lateral fixo para mobile */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Elemento decorativo sutil de fundo */
+.secao::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 40%;
+  height: 60%;
+  background: radial-gradient(
+    circle,
+    rgba(193, 123, 78, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.conteudo {
+  max-width: 700px;
+  width: 100%;
+}
+
+.tagline {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-brand-terra);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.titulo {
+  font-family: var(--font-family-display);
+  font-size: clamp(40px, 6vw, 72px);
+  font-weight: 900;
+  color: var(--color-neutral-white);
+  line-height: 1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+  word-wrap: break-word; /* Evita quebra de layout no mobile */
+}
+
+.destaque {
+  color: var(--color-brand-terra);
+  font-style: italic;
+}
+
+.descricao {
+  font-size: clamp(16px, 1.2vw, 20px);
+  font-weight: 300;
+  color: var(--color-neutral-gold);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 580px;
+}
+
+.acoes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Garante que os botões empilhem se necessário */
+}
+
+.botaoPrimario {
+  background: var(--color-brand-terra);
+  color: var(--color-neutral-white);
+  padding: 16px 36px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: 1px solid var(--color-brand-terra);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.botaoPrimario:hover {
+  background: var(--color-brand-terra-dark);
+  transform: translateY(-2px);
+}
+
+.botaoSecundario {
+  background: transparent;
+  color: var(--color-neutral-white);
+  padding: 16px 36px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.botaoSecundario:hover {
+  border-color: var(--color-brand-terra);
+  background: rgba(193, 123, 78, 0.05);
+}
+
+@media (max-width: 768px) {
+  .secao {
+    min-height: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .acoes {
+    flex-direction: column; /* Botões um sobre o outro no mobile */
+    width: 100%;
+  }
+
+  .botaoPrimario,
+  .botaoSecundario {
+    width: 100%;
+    text-align: center;
+  }
+}

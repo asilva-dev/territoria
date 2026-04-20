@@ -1,0 +1,190 @@
+.secao {
+  background: var(--color-neutral-ink);
+  padding: 80px 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brand-terra);
+  margin-bottom: 1rem;
+}
+
+.titulo {
+  font-family: var(--font-family-display);
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--color-neutral-white);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.subtitulo {
+  color: var(--color-neutral-gold);
+  font-weight: 300;
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+/* Formulário */
+.campo {
+  margin-bottom: 1.5rem;
+}
+
+.rotulo {
+  display: block;
+  font-size: 12px;
+  color: var(--color-neutral-gold);
+  margin-bottom: 0.5rem;
+}
+
+.entrada {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(193, 123, 78, 0.2);
+  padding: 1rem;
+  color: var(--color-neutral-white);
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.entrada:focus {
+  outline: none;
+  border-color: var(--color-brand-terra);
+}
+
+.areaTexto {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.botao {
+  background: var(--color-brand-terra);
+  color: var(--color-neutral-white);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+/* Lateral */
+.infoTitulo {
+  font-family: var(--font-family-display);
+  font-size: 24px;
+  color: var(--color-neutral-white);
+  margin-bottom: 2.5rem;
+}
+
+.accent {
+  color: var(--color-brand-terra);
+}
+
+.listaInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.infoItem:hover {
+  transform: translateX(5px);
+}
+
+.infoIconeArea {
+  color: var(--color-brand-terra);
+  background: rgba(193, 123, 78, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoRotulo {
+  display: block;
+  font-size: 11px;
+  color: var(--color-brand-terra);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.infoValor {
+  color: var(--color-neutral-white);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.nota {
+  background: rgba(193, 123, 78, 0.05);
+  padding: 1.5rem;
+  border-left: 2px solid var(--color-brand-terra);
+}
+
+.notaRotulo {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-brand-terra);
+  margin-bottom: 0.5rem;
+}
+
+.notaValor {
+  font-size: 13px;
+  color: var(--color-neutral-gold);
+  line-height: 1.5;
+}
+
+.notaSucesso {
+  padding: 3rem;
+  text-align: center;
+  background: rgba(193, 123, 78, 0.05);
+  border-radius: 4px;
+}
+
+.sucessoIcone {
+  color: var(--color-brand-terra);
+  margin-bottom: 1rem;
+}
+
+.sucessoTexto {
+  font-size: 1.5rem;
+  color: var(--color-neutral-white);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .grade {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

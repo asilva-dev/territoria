@@ -1,0 +1,58 @@
+.secao {
+  background: var(--color-neutral-gold-light);
+  padding: 80px 1.5rem; /* Respiro lateral garantido */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grade {
+  display: grid;
+  /* Garante que o grid quebre em telas menores que 350px */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.titulo {
+  font-family: var(--font-family-display);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 900;
+  color: var(--color-neutral-ink);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  word-wrap: break-word;
+}
+
+.corpo {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-neutral-ink);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.pilarItem {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pilarNum {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-brand-terra);
+  letter-spacing: 0.1em;
+}
+
+.pilarTitle {
+  font-family: var(--font-family-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-neutral-ink);
+  margin: 0.4rem 0;
+}

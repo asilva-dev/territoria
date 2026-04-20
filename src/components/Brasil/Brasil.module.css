@@ -1,0 +1,192 @@
+.brasilSection {
+  background-color: var(--color-neutral-ink);
+  color: var(--color-neutral-white);
+  padding: 100px 0;
+}
+
+.bioSection {
+  background-color: var(--color-neutral-white);
+  padding: 100px 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-brand-terra);
+  margin-bottom: var(--space-sm);
+}
+
+.h2light {
+  font-family: var(--font-family-display);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--color-neutral-white);
+  line-height: 1.15;
+  margin-bottom: var(--space-sm);
+}
+
+.h2dark {
+  font-family: var(--font-family-display);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--color-neutral-ink);
+  line-height: 1.15;
+  margin-bottom: var(--space-sm);
+}
+
+.accent {
+  color: var(--color-brand-terra);
+  font-style: italic;
+}
+
+.lead {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-neutral-gold);
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.regiaoCard {
+  background: var(--color-neutral-ink-mid);
+  border: 1px solid rgba(193, 123, 78, 0.2);
+  border-radius: 4px;
+  padding: 1.25rem;
+}
+
+.regiaoEstado {
+  font-family: var(--font-family-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-neutral-white);
+  margin-bottom: 0.3rem;
+}
+
+.regiaoCidade {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-neutral-gold);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.statusBadge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+
+.bioGrid {
+  display: grid;
+  grid-template-columns: 400px 1fr; /* Foto com largura fixa, texto expande */
+  gap: 5rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 500px; /* Mantém o formato oval/redondo do print */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 1px solid var(--color-brand-terra);
+  padding: 10px; /* Espaço entre a foto e a borda ocre */
+}
+
+.bioText {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--color-neutral-ink-soft);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  justify-content: flex-start;
+}
+
+.badge {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-neutral-gray);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 5;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 12%; /* Protege o topo da cabeça */
+  display: block;
+  margin: 0 auto;
+
+  /* Borda Moderna com a Identidade Visual */
+  border: 2px solid var(--color-brand-terra);
+
+  /* Efeito de profundidade (opcional, dá um ar de UI moderna) */
+  box-shadow: 0 0 0 8px rgba(193, 123, 78, 0.1), 0 20px 40px rgba(0, 0, 0, 0.2);
+
+  transition: transform var(--anim-duration-base) var(--anim-ease);
+}
+
+.avatar:hover {
+  transform: scale(1.02);
+  border-color: var(--color-brand-terra-light);
+}
+
+.bioText {
+  font-size: 16px; /* Aumentado para melhor leitura */
+  font-weight: 300;
+  color: var(--color-neutral-ink-soft);
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .bioGrid {
+    grid-template-columns: 1fr; /* Foto em cima, texto embaixo */
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .avatar {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .badges {
+    justify-content: center; /* Centraliza badges no mobile */
+  }
+
+  .inner {
+    padding: 0 1.5rem;
+  }
+}
